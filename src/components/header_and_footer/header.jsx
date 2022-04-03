@@ -15,7 +15,14 @@ class Header extends Component {
                     boxShadow:'none'
                 }}
                 >
-Header
+<div className={"header_logo"}>
+    <div className={"font_righteous header_logo_venue"}>
+The Venue
+    </div>
+    <div className={"header_logo_title"}>
+Musical Events
+    </div>
+</div>
                 </AppBar>
             </div>
         );
