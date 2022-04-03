@@ -1,8 +1,9 @@
 import './resources/styles.css';
+import Header from './components/header_and_footer/header';
 const App = ()=> {
   return (
     <div className="App">
-     Hello
+     <Header/>
     </div>
   );
 }
