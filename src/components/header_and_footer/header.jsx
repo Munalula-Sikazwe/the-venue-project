@@ -9,6 +9,11 @@ class Header extends Component {
             <div>
                 <AppBar
                 position={"fixed"}
+                style={{
+                    backgroundColor:"#2f2f2f",
+                    padding:'10px 0px',
+                    boxShadow:'none'
+                }}
                 >
 Header
                 </AppBar>
