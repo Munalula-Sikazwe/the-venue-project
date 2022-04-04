@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import AppBar from '@material-ui/core/AppBar';
-import ToolBar from '@material-ui/core/Toolbar';
-import MenuIcon from '@material-ui/icons/Menu';
-import IconButton from '@material-ui/core/IconButton';
+import {Toolbar} from "@material-ui/core";
+
 class Header extends Component {
     render() {
         return (
@@ -15,14 +14,16 @@ class Header extends Component {
                     boxShadow:'none'
                 }}
                 >
+                    <Toolbar>
 <div className={"header_logo"}>
     <div className={"font_righteous header_logo_venue"}>
 The Venue
     </div>
     <div className={"header_logo_title"}>
-Musical Events
+        Musical Events
     </div>
 </div>
+                    </Toolbar>
                 </AppBar>
             </div>
         );
