@@ -29,7 +29,7 @@ The Venue
                     <IconButton
                     aria-label={"Menu"}
                     color={"inherit"}
-                    onclick={this.open}
+                    onClick={this.open}
                     >
                         <MenuIcon>
 
