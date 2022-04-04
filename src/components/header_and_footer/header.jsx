@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
 import AppBar from '@material-ui/core/AppBar';
-import {Toolbar} from "@material-ui/core";
-
+import {IconButton, Toolbar} from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
 class Header extends Component {
+    open = ()=>{
+        console.log("open");
+    }
     render() {
         return (
             <div>
@@ -23,6 +26,15 @@ The Venue
         Musical Events
     </div>
 </div>
+                    <IconButton
+                    aria-label={"Menu"}
+                    color={"inherit"}
+                    onclick={this.open}
+                    >
+                        <MenuIcon>
+
+                        </MenuIcon>
+                    </IconButton>
                     </Toolbar>
                 </AppBar>
             </div>
