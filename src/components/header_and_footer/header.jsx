@@ -2,9 +2,14 @@ import React, {Component} from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import {IconButton, Toolbar} from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
+import SideDrawer from "./sideDrawer";
 class Header extends Component {
-    open = ()=>{
-        console.log("open");
+    state = {
+        drawerOpen: false,
+    }
+
+    toggleDrawer = (drawerState)=>{
+        this.setState({drawerOpen:drawerState})
     }
     render() {
         return (
@@ -17,6 +22,7 @@ class Header extends Component {
                     boxShadow:'none'
                 }}
                 >
+
                     <Toolbar>
 <div className={"header_logo"}>
     <div className={"font_righteous header_logo_venue"}>
@@ -29,12 +35,15 @@ The Venue
                     <IconButton
                     aria-label={"Menu"}
                     color={"inherit"}
-                    onClick={this.open}
+                    onClick={()=> this.toggleDrawer(true)}
                     >
-                        <MenuIcon>
+                        <MenuIcon/>
 
-                        </MenuIcon>
+
                     </IconButton>
+                        <SideDrawer open={this.state.drawerOpen} onClose={(drawerState)=>this.toggleDrawer(drawerState)}/>
+
+
                     </Toolbar>
                 </AppBar>
             </div>
