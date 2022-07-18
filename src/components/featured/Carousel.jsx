@@ -27,6 +27,22 @@ export default function () {
             }}
           ></div>
         </div>
+        <div>
+          <div
+            style={{
+              backgroundImage: `url(${slide_two})`,
+              height: `${window.innerHeight}px`,
+            }}
+          ></div>
+        </div>
+        <div>
+          <div
+            style={{
+              backgroundImage: `url(${slide_three})`,
+              height: `${window.innerHeight}px`,
+            }}
+          ></div>
+        </div>
       </Slider>
     </div>
   );
