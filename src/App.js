@@ -1,10 +1,9 @@
-import './resources/styles.css';
-import Header from './components/header_and_footer/header';
-import FeaturedComponent from './components/featured/FeaturedComponent';
-import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import TimeUntil from './components/featured/TimeUntil';
+import "slick-carousel/slick/slick.css";
+import FeaturedComponent from './components/featured/FeaturedComponent';
+import Header from './components/header_and_footer/header';
 import VenueInfo from './components/venue_info/VenueInfo';
+import './resources/styles.css';
 const App = ()=> {
   return (
     <div className="App" style={{height:"1500px",background:"cornflowerblue"}}>
