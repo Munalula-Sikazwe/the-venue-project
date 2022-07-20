@@ -1,4 +1,5 @@
 import React from "react";
+import { Zoom } from "react-reveal";
 import CalenderIcon from "../../resources/images/icons/calendar.png";
 import LocationIcon from "../../resources/images/icons/location.png";
 export default function VenueInfo() {
@@ -6,6 +7,10 @@ export default function VenueInfo() {
     <div className={"bck_black"}>
       <div className={"center_wrapper"}>
         <div className={"vn_wrapper"}>
+          <Zoom
+          duration={500}
+        
+          >
           <div className={"vn_item"}>
             <div className={"vn_outer"}>
               <div className={"vn_inner"}>
@@ -22,6 +27,11 @@ export default function VenueInfo() {
             </div>
             
           </div>
+          </Zoom>
+          <Zoom
+          duration={500}
+          delay={500}
+          >
           <div className={"vn_item"}>
             <div className={"vn_outer"}>
               <div className={"vn_inner"}>
@@ -38,6 +48,8 @@ export default function VenueInfo() {
             </div>
             
           </div>
+          </Zoom>
+          
         </div>
       </div>
     </div>
