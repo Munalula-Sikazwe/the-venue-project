@@ -10,8 +10,33 @@ export default function VenueInfo() {
             <div className={"vn_outer"}>
               <div className={"vn_inner"}>
                 <div className={"vn_icon_square bck_red"}></div>
+                <div className={"vn_icon"}
+                style={{
+                  background: `url(${CalenderIcon})`,
+                }}
+                >
+                </div>
+                <div className={"vn_title"}>Event Date & Time</div>
+                <div className={"vn_desc"}> 12 August 2022</div>
               </div>
             </div>
+            
+          </div>
+          <div className={"vn_item"}>
+            <div className={"vn_outer"}>
+              <div className={"vn_inner"}>
+                <div className={"vn_icon_square bck_yellow"}></div>
+                <div className={"vn_icon"}
+                style={{
+                  background: `url(${LocationIcon})`,
+                }}
+                >
+                </div>
+                <div className={"vn_title"}>Event Date & Time</div>
+                <div className={"vn_desc"}> 12 August 2022</div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
