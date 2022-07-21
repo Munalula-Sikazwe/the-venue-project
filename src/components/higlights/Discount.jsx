@@ -11,11 +11,11 @@ export default function Discount() {
         <div
         className={"discount_wrapper"}
         >
-            <div className={"discount_percentage"}>
+            <div className={"discount_porcentage"}>
 <span>{discount}%</span>
 <span>OFF</span>
             </div>
         </div>
-        Discount</div>
+    </div>
   )
 }
