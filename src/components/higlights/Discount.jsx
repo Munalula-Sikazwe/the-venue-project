@@ -12,8 +12,9 @@ export default function Discount() {
     }
   }, [discountStart, discountEnd]);
   useEffect(() => {
+    if (discountStart > 0){
     setTimeout(discountPercent, 30);
-
+    }
     
   }, [discountStart,discountPercent]);
 
