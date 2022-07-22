@@ -31,9 +31,14 @@ console.log(discountStart)
           <div className={"discount_description"}>
             <h3>Purchase tickets before 20th June</h3>
             <p>Order now while stocks last</p>
-            <div>
-            <MyButton/>
-          </div>
+            
+            <MyButton
+            text={"Purchase Tickets"}
+            bck={"#ff0000"}
+            color={"#fff"}
+            link={"https://www.google.com"}
+            />
+          
           </div>
          
         </Slide>
