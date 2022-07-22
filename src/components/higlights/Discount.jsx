@@ -18,8 +18,6 @@ export default function Discount() {
   }, [discountStart,discountPercent]);
 
   
-  
-console.log(discountStart)
   return (
     <div className={"center_wrapper"}>
       <div className={"discount_wrapper"}>
@@ -36,7 +34,7 @@ console.log(discountStart)
             
             <MyButton
             text={"Purchase Tickets"}
-            bck={"#ff0000"}
+            bck={"#ffa800"}
             color={"#fff"}
             link={"https://www.google.com"}
             />

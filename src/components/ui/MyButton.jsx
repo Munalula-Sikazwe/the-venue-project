@@ -1,14 +1,14 @@
 import React from 'react'
 import { Button } from '@material-ui/core';
 import Ticket_Icon from '../../resources/images/icons/ticket.png';
-export default function MyButton() {
+export default function MyButton({link, text, bck, color}) {
   return (
     <Button 
-    href={'https://www.google.com'}
+    href={link}
     size={"small"}
     style={{
-        backgroundColor: 'red',
-        color: 'white',
+        backgroundColor: bck,
+        color,
     }}
     variant="contained" 
     color="primary"
@@ -19,7 +19,7 @@ export default function MyButton() {
         className={"iconImage"}
         />
 
-Purchase Tickets
+{text}
     </Button>
   )
 }
