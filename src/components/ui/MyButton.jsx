@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '@material-ui/core';
-import Ticket_Icon from '../../assets/images/icons/ticket.png';
+import Ticket_Icon from '../../resources/images/icons/ticket.png';
 export default function MyButton() {
   return (
     <Button 

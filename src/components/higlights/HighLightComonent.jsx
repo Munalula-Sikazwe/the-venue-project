@@ -8,6 +8,7 @@ export default function HighLightComponent
     <div className={"highlight_wrapper"}>
    <Description/>
    <Discount/>
+   
     </div>
   )
 }
