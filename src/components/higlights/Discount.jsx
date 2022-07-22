@@ -5,17 +5,19 @@ import { Fade, Slide } from "react-reveal";
 import MyButton from "../ui/MyButton";
 export default function Discount() {
   const [discountStart, setDiscountStart] = useState(0);
-  const [discountEnd, setDiscountEnd] = useState(30);
-  useEffect(() => {
-    setTimeout(discountPercent, 30);
-
-    
-  }, [discountStart]);
+  const [discountEnd] = useState(30);
   const discountPercent = useCallback(() => {
     if (discountStart < discountEnd) {
       setDiscountStart(discountStart + 1);
     }
   }, [discountStart, discountEnd]);
+  useEffect(() => {
+    setTimeout(discountPercent, 30);
+
+    
+  }, [discountStart,discountPercent]);
+
+  
   
 console.log(discountStart)
   return (
