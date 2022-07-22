@@ -8,6 +8,7 @@ import LocationComponent from "./components/Location/LocationComponent";
 import PricingComponent from "./components/pricing/PricingComponent";
 import VenueInfo from "./components/venue_info/VenueInfo";
 import "./resources/styles.css";
+import {Element} from "react-scroll";
 const App = () => {
   return (
     <div
@@ -15,12 +16,27 @@ const App = () => {
       style={{ height: "1500px", background: "cornflowerblue" }}
     >
       <Header />
-      <FeaturedComponent />
+      <Element
+        name={"countdown"}
+      >
+         <FeaturedComponent />
+      </Element>
+      <Element name={"info"}>
       <VenueInfo />
-      <HighLightComponent/>
+      </Element>
+      <Element name={"highlights"}>
+      <HighLightComponent />
+      </Element>
+      <Element  name={"pricing"}>
       <PricingComponent/>
-      <LocationComponent/>
-      <FooterComponent/>
+      </Element>
+      <Element name={"location"}>
+      <LocationComponent />
+      </Element>
+      <Element name={"footer"}>
+      <FooterComponent />
+      </Element>
+     
     </div>
   );
 };
